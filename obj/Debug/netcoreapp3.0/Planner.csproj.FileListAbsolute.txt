@@ -1,0 +1,11 @@
+/Users/arynweatherly/workspace/csharp/exercises/planner/obj/Debug/netcoreapp3.0/Planner.csprojAssemblyReference.cache
+/Users/arynweatherly/workspace/csharp/exercises/planner/obj/Debug/netcoreapp3.0/Planner.AssemblyInfoInputs.cache
+/Users/arynweatherly/workspace/csharp/exercises/planner/obj/Debug/netcoreapp3.0/Planner.AssemblyInfo.cs
+/Users/arynweatherly/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.0/Planner
+/Users/arynweatherly/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.0/Planner.deps.json
+/Users/arynweatherly/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.0/Planner.runtimeconfig.json
+/Users/arynweatherly/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.0/Planner.runtimeconfig.dev.json
+/Users/arynweatherly/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.0/Planner.dll
+/Users/arynweatherly/workspace/csharp/exercises/planner/bin/Debug/netcoreapp3.0/Planner.pdb
+/Users/arynweatherly/workspace/csharp/exercises/planner/obj/Debug/netcoreapp3.0/Planner.dll
+/Users/arynweatherly/workspace/csharp/exercises/planner/obj/Debug/netcoreapp3.0/Planner.pdb

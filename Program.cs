@@ -49,26 +49,3 @@ namespace Planner
 
     }
 }
-
-//                     Building Tango = new Building("123 dog circle")
-//             {
-//                 Width = 200,
-//                 Height = 1200,
-//                 Depth = 300,
-//                 Stories = 20,
-//             };
-//                     Building Cash = new Building("123 dog drive")
-//             {
-//                 Width = 5000,
-//                 Height = 3000,
-//                 Depth = 750,
-//                 Stories = 31,
-//             };
-//               // Have business people in your city purchase each of your buildings.
-//             // Lilo.Construct();
-//             // Tango.Construct();
-//             // Cash.Construct();
-
-//         }
-//     }
-// }

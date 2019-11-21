@@ -1,24 +1,25 @@
+using System;
 using System.Collections.Generic;
 
 namespace Planner
 {
-    public class City
+    class City
+
     {
-        public City(string name)
+
+        public string Name { get; }
+        public string Mayor { get; }
+
+        public int Established { get; }
+
+        public List<Building> ListOfBuildings { get; set; }
+
+        public City(string name, string mayor, int established)
         {
             Name = name;
-        }
-
-        public string Name { get; set; }
-        public string Mayor { get; set; }
-
-        public int Established { get; set; }
-
-        public List<Building> Buildings { get; set; } = new List<Building>();
-
-        public void AddBuilding(Building building)
-        {
-            Buildings.Add(building);
+            Mayor = mayor;
+            Established = established;
+            ListOfBuildings = new List<Building>();
         }
     }
 }

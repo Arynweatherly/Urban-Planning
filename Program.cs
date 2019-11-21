@@ -7,95 +7,68 @@ namespace Planner
     {
         static void Main(string[] args)
         {
-            City awesomeCity = new City("awesomeCity")
+            // city DogCity = new City()
+            List<Building> buildings = new List<Building>();
+            Building Lilo = new Building("123 Lilo Street")
             {
-                Mayor = "Phil",
-                Established = 1830
+                Width = 1_000,
+                Depth = 3_000,
+                Stories = 8
+            };
+            Building Tango = new Building("123 Tango Road")
+            {
+                Width = 3_000,
+                Depth = 900,
+                Stories = 4
             };
 
-            City funnyTown = new City("funnyTown")
+            Building Cash = new Building("123 Cash Court")
             {
-                Mayor = "Sage",
-                Established = 1630
-            };
-
-            Building Old = new Building("123 smokey way", "Old")
-            {
-                Width = 10,
-                Depth = 10,
-                Stories = 20
-            };
-            Building New = new Building("222 heck yeah", "New")
-            {
-                Width = 1234,
-                Depth = 543,
-                Stories = 123
-            };
-            Building Haunted = new Building("666 spooky lane", "Haunted")
-            {
-                Width = 666,
+                Width = 2_000,
                 Depth = 800,
-                Stories = 6
+                Stories = 10
             };
-            Building PhilTower = new Building("100 phil drive", "PhilTower")
+
+            Lilo.Construct();
+            Tango.Construct();
+            Cash.Construct();
+            Lilo.Purchase("Aryn");
+            Tango.Purchase("Dylan");
+            Cash.Purchase("Phil");
+
+            City megalopolis = new City("Nashville", "Phil", 1799);
+            megalopolis.ListOfBuildings.Add(Lilo);
+            megalopolis.ListOfBuildings.Add(Tango);
+            megalopolis.ListOfBuildings.Add(Cash);
+
+            foreach (Building building in megalopolis.ListOfBuildings)
             {
-                Width = 123,
-                Depth = 456,
-                Stories = 50
-            };
-            Building KeatonHouse = new Building("123 Keaton Court", "KeatonHouse")
-            {
-                Width = 200,
-                Depth = 200,
-                Stories = 20
-            };
-            Building DylanPlaza = new Building("100 Pickle Drive", "DylanPlaza")
-            {
-                Width = 100,
-                Depth = 200,
-                Stories = 20
-            };
-
-            Old.Construct();
-            Old.Purchase("Nate");
-            //Console.WriteLine(Old.Description);
-            awesomeCity.AddBuilding(Old);
-
-            New.Construct();
-            New.Purchase("Taylor");
-            //Console.WriteLine(New.Description);
-            awesomeCity.AddBuilding(New);
-
-            Haunted.Construct();
-            Haunted.Purchase("Heidi");
-            //Console.WriteLine(Haunted.Description);
-            awesomeCity.AddBuilding(Haunted);
-
-            PhilTower.Construct();
-            PhilTower.Purchase("Phil");
-            //Console.WriteLine(PhilTower.Description);
-            funnyTown.AddBuilding(PhilTower);
-
-            KeatonHouse.Construct();
-            KeatonHouse.Purchase("keaton");
-            //Console.WriteLine(KeatonHouse.Description);
-            funnyTown.AddBuilding(KeatonHouse);
-
-            DylanPlaza.Construct();
-            DylanPlaza.Purchase("Dylan");
-            //Console.WriteLine(DylanPlaza.Description);
-            funnyTown.AddBuilding(DylanPlaza);
-
-            foreach (Building building in awesomeCity.Buildings)
-            {
-                Console.WriteLine($"{awesomeCity.Name} has the following buildings: {building.Name}");
-            };
-
-            foreach (Building building in funnyTown.Buildings)
-            {
-                Console.WriteLine($"{funnyTown.Name} has the following buildings: {building.Name}");
-            };
-
+                Console.WriteLine(building.Description);
+            }
         }
+
     }
 }
+
+//                     Building Tango = new Building("123 dog circle")
+//             {
+//                 Width = 200,
+//                 Height = 1200,
+//                 Depth = 300,
+//                 Stories = 20,
+//             };
+//                     Building Cash = new Building("123 dog drive")
+//             {
+//                 Width = 5000,
+//                 Height = 3000,
+//                 Depth = 750,
+//                 Stories = 31,
+//             };
+//               // Have business people in your city purchase each of your buildings.
+//             // Lilo.Construct();
+//             // Tango.Construct();
+//             // Cash.Construct();
+
+//         }
+//     }
+// }
